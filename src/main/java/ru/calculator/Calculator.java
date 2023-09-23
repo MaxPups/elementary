@@ -21,8 +21,8 @@ public class Calculator {
 
 
         // exec method func1 from task
-        int res3 = Calculator.func1(1000);
-        System.out.println(res3);
+        int result3 = Calculator.func1(1000);
+        System.out.println(result3);
 
     }
     public static int plus(int first, int second) {

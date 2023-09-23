@@ -13,10 +13,20 @@ public class MathFunc {
         return y;
     }
 
-    public static void main(String[] args) {
+    public static int func3() {
         int res1 = MathFunc.func1(3);
         int res2 = MathFunc.func1(5);
+        int result = res1 + res2;
+        return result;
+    }
+
+    public static void main(String[] args) {
+
+//        int res1 = MathFunc.func1(3);
+//        int res2 = MathFunc.func1(5);
+//        System.out.println(res1);
+//        System.out.println(res2);
+        int res1 = MathFunc.func3();
         System.out.println(res1);
-        System.out.println(res2);
     }
 }
