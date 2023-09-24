@@ -22,10 +22,7 @@ public class MathFunc {
 
     public static void main(String[] args) {
 
-//        int res1 = MathFunc.func1(3);
-//        int res2 = MathFunc.func1(5);
-//        System.out.println(res1);
-//        System.out.println(res2);
+
         int res1 = MathFunc.func3();
         System.out.println(res1);
     }
