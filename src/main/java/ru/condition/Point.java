@@ -1,6 +1,6 @@
 package ru.condition;
 
-public class Main {
+public class Point {
 
     static double distance(int x1, int y1, int x2, int y2) {
         double resX = x2 - x1;
