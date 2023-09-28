@@ -30,7 +30,7 @@ class ConverterTest {
     void whenConvert360RblThen3Dot5Dollar() {
         float in = 360;
         float expected = 3.5f;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
@@ -38,7 +38,7 @@ class ConverterTest {
     void whenConvert50RblThen3Dot5Dollar() {
         float in = 50;
         float expected = 0.55f;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
@@ -49,7 +49,7 @@ class ConverterTest {
     void whenConvert1EuroThen100Dot0Rbl() {
         float in = 1;
         float expected = 100f;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.euroToRubles(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
@@ -57,7 +57,7 @@ class ConverterTest {
     void whenConvert5EuroThen500Dot0Rbl() {
         float in = 5;
         float expected = 500;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.euroToRubles(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
@@ -68,7 +68,7 @@ class ConverterTest {
     void whenConvert2DollarThen180Dot0Rbl() {
         float in = 2;
         float expected = 180f;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.dollarToRubles(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
@@ -79,7 +79,7 @@ class ConverterTest {
     void whenConvert4DollarThen360Dot0Rbl() {
         float in = 4;
         float expected = 360f;
-        float out = Converter.rubleToEuro(in);
+        float out = Converter.dollarToRubles(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
