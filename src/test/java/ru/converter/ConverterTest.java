@@ -27,9 +27,9 @@ class ConverterTest {
 
 
     @Test
-    void whenConvert360RblThen3Dot5Dollar() {
+    void whenConvert360RblThen4Dollar() {
         float in = 360;
-        float expected = 3.5f;
+        float expected = 4f;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
@@ -37,7 +37,7 @@ class ConverterTest {
     @Test
     void whenConvert50RblThen3Dot5Dollar() {
         float in = 50;
-        float expected = 0.55f;
+        float expected = 0.5555555f;
         float out = Converter.rubleToDollar(in);
         float eps = 0.0001f;
         assertThat(out).isEqualTo(expected, withPrecision(eps));
