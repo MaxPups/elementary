@@ -26,6 +26,8 @@ class X2Test {
         assertThat(rsl).isEqualTo(expected);
 
     }
+
+    @Test
     void whenA0B1C1X1Then2() {
         int a = 0;
         int b = 1;
@@ -36,7 +38,7 @@ class X2Test {
         assertThat(rsl).isEqualTo(expected);
 
     }
-
+    @Test
     void whenA1B1C0X1Then2() {
         int a = 1;
         int b = 1;
@@ -47,7 +49,8 @@ class X2Test {
         assertThat(rsl).isEqualTo(expected);
 
     }
-    void whenA1B1C1X1Then2() {
+    @Test
+    void whenA1B1C1X0Then2() {
         int a = 1;
         int b = 1;
         int c = 1;
