@@ -18,8 +18,8 @@ class PointTest {
     }
 
     @Test
-    void when55to1010then7Dot071() {
-        double expected = 7.0710678;
+    void when55to1010then7Dot0710678118654755() {
+        double expected = 7.0710678118654755;
         int x1 = 5;
         int y1 = 5;
         int x2 = 10;
@@ -30,8 +30,8 @@ class PointTest {
 
 
     @Test
-    void when1525to203then22Dot5610() {
-        double expected =22.56102834 ;
+    void when1525to203then22Dot561028345356956() {
+        double expected =22.561028345356956 ;
         int x1 = 15;
         int y1 = 25;
         int x2 = 20;
@@ -40,8 +40,8 @@ class PointTest {
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
     @Test
-    void when333to9867then100Dot9009() {
-        double expected =100.9009415;
+    void when333to9867then100Dot90094152187085() {
+        double expected =100.90094152187085;
         int x1 = 3;
         int y1 = 33;
         int x2 = 98;

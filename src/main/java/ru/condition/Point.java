@@ -8,14 +8,10 @@ public class Point {
         resX = Math.pow(resX, 2);
         resY = Math.pow(resY, 2);
         double result = resX + resY;
-//        double rsl = Math.sqrt(result);
-//        return rsl;
-        return  Math.sqrt(result);
+        return Math.sqrt(result);
     }
 
     public static void main(String[] args) {
-
-
 
         double result = distance(5, -5, -5, 10);
         System.out.println(result);
@@ -27,12 +23,11 @@ public class Point {
         result = distance(15, 15, -5, 100);
         System.out.println(result);
 
-        result = distance(-40 , -100, 20, 22);
+        result = distance(-40, -100, 20, 22);
         System.out.println(result);
 
         result = distance(43, 29, -99, 26);
         System.out.println(result);
-
 
     }
 }
