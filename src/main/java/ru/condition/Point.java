@@ -19,7 +19,6 @@ public class Point {
         result = distance(3, 33, 98, 67);
         System.out.println(result);
 
-
         result = distance(15, 15, -5, 100);
         System.out.println(result);
 

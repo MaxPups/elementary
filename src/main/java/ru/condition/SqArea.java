@@ -13,7 +13,7 @@ public class SqArea {
         int k = 1;
 
         double result1 = SqArea.square(6, 2);
-        System.out.println( " real = " + result1);
+        System.out.println(" real = " + result1);
 
     }
 }

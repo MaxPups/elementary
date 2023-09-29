@@ -33,7 +33,6 @@ class SqAreaTest {
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
-
     @Test
     void whenP30K4Square36() {
         int expected = 36;
