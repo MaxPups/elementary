@@ -1,4 +1,4 @@
-package ru.condition;
+package ru.loop;
 
 public class Counter {
     public static int sum(int start, int finish) {
@@ -19,10 +19,4 @@ public class Counter {
         return sum;
     }
 
-    public static void main(String[] args) {
-        System.out.println(sumByEven(10, 12));
-        System.out.println(sumByEven(20, 25));
-        System.out.println(sumByEven(1, 5));
-
-    }
 }

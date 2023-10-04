@@ -1,6 +1,7 @@
-package ru.condition;
+package ru.loop;
 
 import org.junit.jupiter.api.Test;
+import ru.loop.Counter;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
