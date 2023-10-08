@@ -1,6 +1,7 @@
 package ru.condition;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TriangleTest {
@@ -15,7 +16,7 @@ class TriangleTest {
     }
 
     @Test
-    void whenNotExist(){
+    void whenNotExist() {
         double ab = 1.0;
         double ac = 1.0;
         double bc = 3.0;

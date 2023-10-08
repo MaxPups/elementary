@@ -19,9 +19,9 @@ public class ChessBoard {
     public static void main(String[] args) {
         int res = way(1, 1, 5, 5);
         System.out.println(res);
-        res =way(1, 1, 6, 6);
+        res = way(1, 1, 6, 6);
         System.out.println(res);
-        res =way(2, 3, 6, 7);
+        res = way(2, 3, 6, 7);
         System.out.println(res);
     }
 

@@ -6,8 +6,8 @@ public class Triangle {
         return ((ab + ac) > bc) && ((ac + bc) > ab) && ((ab + bc) > ac);
     }
 
-    public static void main (String[] args){
-        boolean res = exist(4,6,3);
+    public static void main(String[] args) {
+        boolean res = exist(4, 6, 3);
         System.out.println(res);
     }
 }
