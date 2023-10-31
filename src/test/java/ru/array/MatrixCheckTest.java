@@ -14,7 +14,7 @@ public class MatrixCheckTest {
                 'X', 'X', 'X'
         }, {
                 ' ', ' ', ' '
-        },};
+        }, };
         int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isTrue();
@@ -23,12 +23,12 @@ public class MatrixCheckTest {
     @Test
     public void whenHasNotMonoHorizontal() {
         char[][] input = {{
+                ' ', 'X', ' '
+        }, {
+                ' ', 'X', 'X'
+        }, {
                 'X', ' ', ' '
-        }, {
-                '-', 'X', 'X'
-        }, {
-                ' ', '-', ' '
-        },};
+        }, };
         int row = 1;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isFalse();
@@ -42,7 +42,7 @@ public class MatrixCheckTest {
                 ' ', ' ', 'X'
         }, {
                 ' ', ' ', 'X'
-        },};
+        }, };
         int column = 2;
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isTrue();
@@ -56,7 +56,7 @@ public class MatrixCheckTest {
                 ' ', ' ', 'X'
         }, {
                 ' ', ' ', ' '
-        },};
+        }, };
         int column = 2;
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isFalse();
@@ -70,7 +70,7 @@ public class MatrixCheckTest {
                 ' ', 'X', ' '
         }, {
                 ' ', ' ', 'X'
-        },};
+        }, };
         char[] result = MatrixCheck.extractDiagonal(input);
         char[] expected = {'X', 'X', 'X'};
         assertThat(result).containsExactly(expected);
@@ -85,7 +85,7 @@ public class MatrixCheckTest {
                 ' ', '1', ' '
         }, {
                 ' ', ' ', '1'
-        },};
+        }, };
         char[] result = MatrixCheck.extractDiagonal(input);
         char[] expected = {'1', '1', '1'};
         assertThat(result).containsExactly(expected);
@@ -99,7 +99,7 @@ public class MatrixCheckTest {
                 ' ', 'Y', ' '
         }, {
                 ' ', ' ', 'Z'
-        },};
+        }, };
         char[] result = MatrixCheck.extractDiagonal(input);
         char[] expected = {'X', 'Y', 'Z'};
         assertThat(result).containsExactly(expected);
@@ -107,14 +107,26 @@ public class MatrixCheckTest {
 
     @Test
     public void whenDataMonoByTrueThenTrue() {
-        char[][] input = {{' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '},};
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result).isTrue();
     }
 
     @Test
     public void whenDataNotMonoByTrueThenFalse() {
-        char[][] input = {{' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', 'X', ' ', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', 'X', ' ', ' '},};
+        char[][] input = {
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+        };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result).isFalse();
     }
@@ -134,7 +146,13 @@ public class MatrixCheckTest {
 
     @Test
     public void whenDataDiagMonoIsTrueThenFalse() {
-        char[][] input = {{'X', ' ', ' ', ' ', ' '}, {' ', 'X', ' ', ' ', ' '}, {' ', ' ', 'X', ' ', ' '}, {' ', ' ', ' ', 'X', ' '}, {' ', ' ', ' ', ' ', 'X'},};
+        char[][] input = {
+                {'X', ' ', ' ', ' ', ' '},
+                {' ', 'X', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
+                {' ', ' ', ' ', 'X', ' '},
+                {' ', ' ', ' ', ' ', 'X'},
+        };
         boolean result = MatrixCheck.isWin(input);
         assertThat(result).isFalse();
     }

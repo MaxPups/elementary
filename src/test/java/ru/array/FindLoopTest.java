@@ -79,7 +79,7 @@ class FindLoopTest {
 
     @Test
     public void whenDiapasonHas21Then5() {
-        int[] data = new int[]{1,1,2,3,4,21,8,9,5,44};
+        int[] data = new int[]{1, 1, 2, 3, 4, 21, 8, 9, 5, 44};
         int el = 21;
         int start = 4;
         int finish = 7;
